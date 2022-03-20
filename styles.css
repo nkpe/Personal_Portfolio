@@ -10,11 +10,12 @@ body {
 }
 
 header {
-    background-color: pink;
+    /* background-color: pink; */
     /* position: fixed; */
     height: 90px;
     width: 100%;
     overflow: hidden;
+    line-height: 90px;
 }
 
 header img {
@@ -25,25 +26,33 @@ header img {
 }
 
 header nav {
-    background: #BDE8AE;
+    position: relative;
+    background: rgba(189, 232, 174, 0.51);
     width: fit-content;
-    padding-right: 10px;
-    height: 200px;
+    padding-right: 20px;
     float: right;
+}
+
+header nav ul{
+    margin: 0;
 }
 
 header nav ul li {
     display: inline;
     list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 /* 
 USE CSS GRID */
 
-main {
+main .vh {
     height: calc(100vh - 90px);
 }
 
-main #aside_left {
+/* HOME PAGE */
+
+#home_pg_main #aside_left {
     /* position: absolute;
     background-color: #FFFBD5;
     width: 75%;
@@ -59,22 +68,27 @@ main #aside_left {
     width: 75%;
     left: 0px;
     z-index: 1;
-    
-    
 }
 
-main #aside_left #wel_home_bkgrnd {
+#home_pg_main #aside_left #wel_home_bkgrnd {
     background-color: #FFFBD5;
     height: 54%;
     width: 100%;
     position: relative;
 }
 
-main #welcome_home h1 {
+#home_pg_main #aside_left #wel_home_bkgrnd h1 {
     font-weight: normal;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 35px;
 }
 
-main #aside_right{
+#home_pg_main #aside_right{
     display: block;
     position: absolute;
     height: inherit;
@@ -84,3 +98,88 @@ main #aside_right{
     z-index: 0;
 }
 
+/* BIO PAGE  */
+.long_page{
+    display: block;
+    position: relative;
+}
+
+#bio_page {
+    height: 220vh;
+}
+
+
+#bio_page .bio_blocks{
+    position: relative;
+    height: 75vh;
+    width: 85%;
+    line-height: 55vh;
+    margin: 0;
+    text-align: center;
+}
+
+#bio_page .bio_blocks h2{
+    font-weight: normal;
+}
+
+#bio_page .bio_blocks p{
+    display: none;
+}
+
+#bio_page .bio_blocks:hover{
+    filter: brightness(90%);
+    /* filter: drop-shadow(2px 4px 6px rgb(153, 153, 153)) brightness(1.03); */
+}
+
+#bio_page .bio_blocks:hover h2{
+    display: none;
+}
+
+#bio_page .bio_blocks:hover p{
+    display: block;
+}
+
+#bio_page #about_me{
+    background-color: #FFFBD5;
+    top: 0;
+    float: left;
+}
+
+#bio_page #bio_background{
+    background-color: #FDEDFC;
+    float: right;
+    transform: translateY(-20vh);
+}
+
+#bio_page #bio_present{
+    background-color: #D4E4FD;
+    float: left;
+    transform: translateY(-40vh);
+}
+
+#bio_page #bio_interests{
+    background-color: #FDF1D4;
+    float: right;
+    transform: translateY(-60vh);
+    height: 55vh;
+}
+
+/* Footer  */
+
+footer {
+      position: relative;
+      background-color: #D4E4FD;
+      width: 100%;
+      height: 90px;
+      bottom: 0;
+}
+
+footer #footer_left{
+    position: relative;
+    float: left;
+}
+
+footer #footer_left ul li{
+    list-style-type: none;
+
+}
