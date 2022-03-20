@@ -1,12 +1,15 @@
-html{
+html {
     margin: 0;
 }
 
-body{
+body {
     margin: 0;
+    font-family: Actor, sans-serif;
+    height: 100vh;
+    /* overflow: hidden; */
 }
 
-header{
+header {
     background-color: pink;
     /* position: fixed; */
     height: 90px;
@@ -14,14 +17,14 @@ header{
     overflow: hidden;
 }
 
-header img{
+header img {
     align-self: left;
     height: inherit;
     width: auto;
     float: left;
 }
 
-nav{
+header nav {
     background: #BDE8AE;
     width: fit-content;
     padding-right: 10px;
@@ -29,8 +32,55 @@ nav{
     float: right;
 }
 
-nav ul li{
+header nav ul li {
     display: inline;
     list-style-type: none;
+}
+/* 
+USE CSS GRID */
+
+main {
+    height: calc(100vh - 90px);
+}
+
+main #aside_left {
+    /* position: absolute;
+    background-color: #FFFBD5;
+    width: 75%;
+    height: 34%;
+    left: 0px;
+   z-index: 2;  */
+    /* margin-top: 33%;
+    margin-bottom: 33%; */
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: inherit;
+    width: 75%;
+    left: 0px;
+    z-index: 1;
+    
+    
+}
+
+main #aside_left #wel_home_bkgrnd {
+    background-color: #FFFBD5;
+    height: 54%;
+    width: 100%;
+    position: relative;
+}
+
+main #welcome_home h1 {
+    font-weight: normal;
+}
+
+main #aside_right{
+    display: block;
+    position: absolute;
+    height: inherit;
+    width: 45%;
+    background-color: #FDEDFC;
+    right: 0px;
+    z-index: 0;
 }
 
