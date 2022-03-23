@@ -9,6 +9,10 @@ body {
     /* overflow: hidden; */
 }
 
+body *{
+    color: rgb(107 107 107) !important;
+}
+
 header {
     /* background-color: pink; */
     /* position: fixed; */
@@ -18,31 +22,38 @@ header {
     line-height: 90px;
 }
 
-header img {
+header .logo_home{
+    position: relative;
+    height: inherit;
+} 
+
+header .logo_home img {
     align-self: left;
     height: inherit;
     width: auto;
     float: left;
+    margin-left: 20px;
 }
 
 header nav {
     position: relative;
     background: rgba(189, 232, 174, 0.51);
     width: fit-content;
-    padding-right: 20px;
     float: right;
 }
 
-header nav ul{
-    margin: 0;
-}
-
-header nav ul li {
+header nav a{
     display: inline;
     list-style-type: none;
     margin-left: 10px;
     margin-right: 10px;
+    text-decoration: none;
 }
+
+header nav a:hover{
+    font-weight: bold;
+}
+
 /* 
 USE CSS GRID */
 
@@ -102,6 +113,7 @@ main .vh {
 .long_page{
     display: block;
     position: relative;
+    overflow: hidden;
 }
 
 #bio_page {
@@ -163,6 +175,57 @@ main .vh {
     transform: translateY(-60vh);
     height: 55vh;
 }
+
+/* Portfolio */
+#portf_pg_main .portf_section {
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+
+#port_pg_main .portf_h2_cont{
+    padding-top: 20px;
+}
+
+#portf_pg_main .portf_h2_cont h2 {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+#portf_pg_main .portf_section .portf_proj_img {
+    /* position: relative; */
+    position: relative;
+    background: lightgrey;
+    width: 340px;
+    margin-top: 20px;
+    height: 350px;
+}
+
+#portf_pg_main .portf_section .portf_proj_img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#portf_pg_main #portf_code_bkg {
+    background-color: #FFFBD5;
+}
+
+#portf_pg_main #portf_design_bkg {
+    background-color: #FDEDFC;
+}
+
+#portf_pg_main #portf_drawing_bkg {
+    background-color: rgba(189, 232, 174, 0.51);
+}
+
+
 
 /* Footer  */
 
