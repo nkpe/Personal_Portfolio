@@ -13,9 +13,11 @@ body *{
     color: rgb(107 107 107) !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 header {
-    /* background-color: pink; */
-    /* position: fixed; */
     height: 90px;
     width: 100%;
     overflow: hidden;
@@ -47,7 +49,6 @@ header nav a{
     list-style-type: none;
     margin-left: 10px;
     margin-right: 10px;
-    text-decoration: none;
 }
 
 header nav a:hover{
@@ -80,6 +81,15 @@ main .vh {
     left: 0px;
     z-index: 1;
 }
+
+#home_pg_main #aside_left img{
+    position: absolute;
+    height: 65vh;
+    width: auto;
+    z-index: 4;
+    right: 40px;
+}
+
 
 #home_pg_main #aside_left #wel_home_bkgrnd {
     background-color: #FFFBD5;
@@ -236,6 +246,11 @@ main .vh {
 
 #contact_pg table{
     width: 100%;
+    width: 100%;
+    background: mistyrose;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-size: 40px;
 }
 
 /* Footer  */
