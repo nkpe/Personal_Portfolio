@@ -1,14 +1,14 @@
-const aboutH2 = document.getElementById("h2_about");
-const aboutP = document.getElementById("p_about");
-const aboutMeBlock = document.getElementById("about_me")
-const bkgdH2 = document.getElementById("h2_bkgd");
-const bkgdP = document.getElementById("p_bkgd");
+const aboutH2 = document.getElementById("h2-about");
+const aboutP = document.getElementById("p-about");
+const aboutMeBlock = document.getElementById("about-me")
+const bkgdH2 = document.getElementById("h2-bkgd");
+const bkgdP = document.getElementById("p-bkgd");
 const bioBkgBlock = document.getElementById("bio-background");
-const presentH2 = document.getElementById("h2_present");
-const presentP = document.getElementById("p_present");
+const presentH2 = document.getElementById("h2-present");
+const presentP = document.getElementById("p-present");
 const presentBlock = document.getElementById("bio-present");
-const interestsH2 = document.getElementById("h2_interests");
-const interestsP = document.getElementById("p_interests");
+const interestsH2 = document.getElementById("h2-interests");
+const interestsP = document.getElementById("p-interests");
 const interestBlock = document.getElementById("bio-interests"); 
 
 

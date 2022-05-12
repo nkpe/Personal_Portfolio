@@ -24,12 +24,12 @@ header {
     line-height: 90px;
 }
 
-header .logo_home{
+header .logo-home{
     position: relative;
     height: inherit;
 } 
 
-header .logo_home img {
+header .logo-home img {
     align-self: left;
     height: inherit;
     width: auto;
@@ -64,7 +64,7 @@ main .vh {
 
 /* HOME PAGE */
 
-#home_pg_main #aside_left {
+#home-pg-main #aside-left {
     /* position: absolute;
     background-color: #FFFBD5;
     width: 75%;
@@ -82,7 +82,7 @@ main .vh {
     z-index: 1;
 }
 
-#home_pg_main #aside_left img{
+#home-pg-main #aside-left img{
     position: absolute;
     height: 65vh;
     width: auto;
@@ -91,14 +91,14 @@ main .vh {
 }
 
 
-#home_pg_main #aside_left #wel_home_bkgrnd {
+#home-pg-main #aside-left #wel-home-bkgrnd {
     background-color: #FFFBD5;
     height: 54%;
     width: 100%;
     position: relative;
 }
 
-#home_pg_main #aside_left #wel_home_bkgrnd h1 {
+#home-pg-main #aside-left #wel-home-bkgrnd h1 {
     font-weight: normal;
     font-size: 50px;
     position: absolute;
@@ -109,7 +109,7 @@ main .vh {
     margin-left: 35px;
 }
 
-#home_pg_main #aside_right{
+#home-pg-main #aside-right{
     display: block;
     position: absolute;
     height: inherit;
@@ -120,18 +120,18 @@ main .vh {
 }
 
 /* BIO PAGE  */
-.long_page{
+.long-page{
     display: block;
     position: relative;
     overflow: hidden;
 }
 
-#bio_page {
+#bio-page {
     height: 220vh;
 }
 
 
-#bio_page .bio_blocks{
+#bio-page .bio-blocks{
     position: relative;
     height: 75vh;
     width: 85%;
@@ -140,48 +140,48 @@ main .vh {
     text-align: center;
 }
 
-#bio_page .bio_blocks h2{
+#bio-page .bio-blocks h2{
     font-weight: normal;
 }
 
-#bio_page .bio_blocks p{
+#bio-page .bio-blocks p{
     display: none;
 }
 
-/* #bio_page .bio_blocks:hover {
+/* #bio-page .bio-blocks:hover {
     filter: brightness(90%);
    
 } */
 
  /* filter: drop-shadow(2px 4px 6px rgb(153, 153, 153)) brightness(1.03); */
 
-/* #bio_page .bio_blocks:hover h2{
+/* #bio-page .bio-blocks:hover h2{
     display: none;
 }
 
-#bio_page .bio_blocks:hover p{
+#bio-page .bio-blocks:hover p{
     display: block;
 } */
 
-#bio_page #about_me{
+#bio-page #about-me{
     background-color: #FFFBD5;
     top: 0;
     float: left;
 }
 
-#bio_page #bio_background{
+#bio-page #bio-background{
     background-color: #FDEDFC;
     float: right;
     transform: translateY(-20vh);
 }
 
-#bio_page #bio_present{
+#bio-page #bio-present{
     background-color: #D4E4FD;
     float: left;
     transform: translateY(-40vh);
 }
 
-#bio_page #bio_interests{
+#bio-page #bio-interests{
     background-color: #FDF1D4;
     float: right;
     transform: translateY(-60vh);
@@ -190,11 +190,11 @@ main .vh {
 
 /* Portfolio */
 
-#portf_pg_main section{
+#portf-pg-main section{
     padding-bottom: 40px;
 }
 
-#portf_pg_main .portf_section {
+#portf-pg-main .portf-section {
     position: relative;
     display: flex;
     align-content: center;
@@ -207,16 +207,16 @@ main .vh {
     margin-top: -20px;
 }
 
-#port_pg_main .portf_h2_cont{
+#port-pg-main .portf-h2-cont{
     padding-top: 20px;
 }
 
-#portf_pg_main .portf_h2_cont h2 {
+#portf-pg-main .portf-h2-cont h2 {
     margin-top: 0;
     font-weight: 400;
 }
 
-#portf_pg_main .portf_section .portf_proj_img {
+#portf-pg-main .portf-section .portf-proj-img {
     /* position: relative; */
     position: relative;
     background: lightgrey;
@@ -225,32 +225,41 @@ main .vh {
     height: 350px;
 }
 
-#portf_pg_main .portf_section .portf_proj_img img {
+#portf-pg-main .portf-section .portf-proj-img img {
     max-width: 100%;
     max-height: 100%;
 }
 
-#portf_pg_main #portf_code_bkg {
+#portf-pg-main #portf-code-bkg {
     background-color: #FFFBD5;
 }
 
-#portf_pg_main #portf_design_bkg {
+#portf-pg-main #portf-design-bkg {
     background-color: #FDEDFC;
 }
 
-#portf_pg_main #portf_drawing_bkg {
+#portf-pg-main #portf-drawing-bkg {
     background-color: rgba(189, 232, 174, 0.51);
 }
 
 /* Contact */
 
-#contact_pg table{
-    width: 100%;
-    width: 100%;
-    background: mistyrose;
-    padding-left: 20vw;
-    padding-right: 20vw;
-    font-size: 40px;
+#contact-pg  #contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contact-pg #contact-form .form-flex-child{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-pg #contact-form .form-flex-child .form-item{
+    display: inline;
+    width: 200px;
+  
 }
 
 /* Footer  */
@@ -263,26 +272,26 @@ footer {
       padding: 20px;
 }
 
-footer .footer_left{
+footer .footer-left{
     position: relative;
     float: left;
 }
 
-footer .footer_left ul{
+footer .footer-left ul{
     margin: 0;
 }
 
-footer .footer_left ul li{
+footer .footer-left ul li{
     list-style-type: none;
 
 }
 
-footer .social_footer{
+footer .social-footer{
     position: relative;
     float: right;
 }
 
-footer .social_footer .fa-brands{
+footer .social-footer .fa-brands{
     font-size: 250%;
     padding-left: 10px;
 }
