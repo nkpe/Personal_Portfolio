@@ -55,10 +55,8 @@ header nav a:hover{
     font-weight: bold;
 }
 
-/* 
-USE CSS GRID */
-
 main .vh {
+    min-height: 330px;
     height: calc(100vh - 90px);
 }
 
@@ -248,6 +246,18 @@ main .vh {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: #FFFBD5;
+    width: 100%;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#contact-pg #contact-form *{
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    resize: none;
 }
 
 #contact-pg #contact-form .form-flex-child{
@@ -256,11 +266,22 @@ main .vh {
     justify-content: center;
 }
 
-#contact-pg #contact-form .form-flex-child .form-item{
+#contact-pg #contact-form .form-item{
     display: inline;
     width: 200px;
+    margin: 7px;
+}
+
+#contact-pg #contact-form #submit-contact-form{
+    text-rendering: auto;
+    color: buttontext;
+    background-color: #FDEDFC;
+   
   
 }
+
+
+
 
 /* Footer  */
 
