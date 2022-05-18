@@ -133,7 +133,6 @@ main .vh {
     position: relative;
     height: 75vh;
     width: 85%;
-    line-height: 55vh;
     margin: 0;
     text-align: center;
 }
@@ -143,23 +142,9 @@ main .vh {
 }
 
 #bio-page .bio-blocks p{
-    display: none;
+    z-index: 10;
 }
 
-/* #bio-page .bio-blocks:hover {
-    filter: brightness(90%);
-   
-} */
-
- /* filter: drop-shadow(2px 4px 6px rgb(153, 153, 153)) brightness(1.03); */
-
-/* #bio-page .bio-blocks:hover h2{
-    display: none;
-}
-
-#bio-page .bio-blocks:hover p{
-    display: block;
-} */
 
 #bio-page #about-me{
     background-color: #FFFBD5;
@@ -215,16 +200,17 @@ main .vh {
 }
 
 #portf-pg-main .portf-section .portf-proj-img {
-    /* position: relative; */
     position: relative;
+    display: flex;
+    justify-content: center;
     background: lightgrey;
-    width: 340px;
+    width: 350px;
     margin-top: 20px;
     height: 350px;
+    overflow: hidden;
 }
 
 #portf-pg-main .portf-section .portf-proj-img img {
-    max-width: 100%;
     max-height: 100%;
 }
 
@@ -242,15 +228,27 @@ main .vh {
 
 /* Contact */
 
+.pg-heading{
+    position: absolute;
+    display: flex;
+    width: 75vw;
+    height: 69px;
+    z-index: 5;
+    background-color: #FDEDFC;
+    align-items: center;
+}
+
 #contact-pg  #contact-form{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #FFFBD5;
     width: 100%;
-    position: relative;
-    padding-top: 10px;
+    box-sizing: content-box;
+    padding-top: 50px;
     padding-bottom: 10px;
+    top: 50px;
 }
 
 #contact-pg #contact-form *{

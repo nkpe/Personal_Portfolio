@@ -1,1 +1,5 @@
-.psd
+*.psd
+/imgs/design-projects/exhibition-stand
+/imgs/design-projects/mini-apartment
+/imgs/design-projects/pailtonengineering
+/imgs/design-projects/social-interlace
