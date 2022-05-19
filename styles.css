@@ -60,6 +60,16 @@ main .vh {
     height: calc(100vh - 90px);
 }
 
+.pg-heading{
+    position: absolute;
+    display: flex;
+    width: 75vw;
+    height: 69px;
+    z-index: 5;
+    background-color: #FDEDFC;
+    align-items: center;
+}
+
 /* HOME PAGE */
 
 #home-pg-main #aside-left {
@@ -240,14 +250,18 @@ main .vh {
 
 /* Contact */
 
-.pg-heading{
-    position: absolute;
+#contact-pg{
+    min-height: 373px !important;
+}
+
+#contact-pg #contact-form-container{
+    position: relative;
+    top: 50px;
     display: flex;
-    width: 75vw;
-    height: 69px;
-    z-index: 5;
-    background-color: #FDEDFC;
     align-items: center;
+    background-color: #FFFBD5;
+    height: calc(100% - 50px);
+    width: 100%;
 }
 
 #contact-pg  #contact-form{
@@ -255,12 +269,8 @@ main .vh {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #FFFBD5;
     width: 100%;
-    box-sizing: content-box;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    top: 50px;
+    height: 75%;
 }
 
 #contact-pg #contact-form *{
@@ -274,6 +284,7 @@ main .vh {
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #contact-pg #contact-form .form-item{
@@ -282,14 +293,28 @@ main .vh {
     margin: 7px;
 }
 
+#contact-pg #contact-form .form-item-span{
+    display: inline;
+    width: 414px;
+    margin: 7px;
+}
+
 #contact-pg #contact-form #submit-contact-form{
     text-rendering: auto;
     color: buttontext;
     background-color: #FDEDFC;
-   
-  
 }
 
+@media screen and (max-width: 427px) {
+    #contact-pg{
+        min-height: 566px !important;
+    }
+    #contact-pg #contact-form .form-item-span{
+        width: 200px;
+    }
+
+
+}
 
 
 
