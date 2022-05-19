@@ -63,36 +63,22 @@ main .vh {
 /* HOME PAGE */
 
 #home-pg-main #aside-left {
-    /* position: absolute;
-    background-color: #FFFBD5;
-    width: 75%;
-    height: 34%;
-    left: 0px;
-   z-index: 2;  */
-    /* margin-top: 33%;
-    margin-bottom: 33%; */
     display: flex;
     align-items: center;
+    flex-direction: row;
     position: absolute;
     height: inherit;
     width: 75%;
     left: 0px;
+    flex-wrap: wrap;
     z-index: 1;
 }
-
-#home-pg-main #aside-left img{
-    position: absolute;
-    height: 65vh;
-    width: auto;
-    z-index: 4;
-    right: 40px;
-}
-
 
 #home-pg-main #aside-left #wel-home-bkgrnd {
     background-color: #FFFBD5;
     height: 54%;
-    width: 100%;
+    padding-right: 233px;
+    width: 50%;
     position: relative;
 }
 
@@ -106,6 +92,23 @@ main .vh {
     margin-bottom: 0;
     margin-left: 35px;
 }
+
+#home-pg-main #aside-left img{
+    position: relative;
+    max-height: 65vh;
+    z-index: 4;
+    right: 40px;
+}
+
+/* @media screen and (max-width: 1251px) {
+    #home-pg-main #aside-left #wel-home-bkgrnd{
+        max-height: 300px;
+    }
+
+    #home-pg-main #aside-left img{
+        max-width: 38vh;
+    }
+} */
 
 #home-pg-main #aside-right{
     display: block;
