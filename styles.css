@@ -68,6 +68,9 @@ main .vh {
     z-index: 5;
     background-color: #FDEDFC;
     align-items: center;
+    padding-left: 35px;
+    box-sizing: content-box;
+
 }
 
 /* HOME PAGE */
@@ -88,7 +91,7 @@ main .vh {
     background-color: #FFFBD5;
     height: 54%;
     padding-right: 233px;
-    width: 50%;
+    width: 40%;
     position: relative;
 }
 
@@ -105,7 +108,7 @@ main .vh {
 
 #home-pg-main #aside-left img{
     position: relative;
-    max-height: 65vh;
+    height: 65vh;
     z-index: 4;
     right: 40px;
 }
@@ -299,6 +302,10 @@ main .vh {
     margin: 7px;
 }
 
+#contact-pg #contact-form .form-flex-child .form-item-span #message-area{
+    height: 100px;
+}
+
 #contact-pg #contact-form #submit-contact-form{
     text-rendering: auto;
     color: buttontext;
@@ -307,7 +314,7 @@ main .vh {
 
 @media screen and (max-width: 427px) {
     #contact-pg{
-        min-height: 566px !important;
+        min-height: 700px !important;
     }
     #contact-pg #contact-form .form-item-span{
         width: 200px;
