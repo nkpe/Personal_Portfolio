@@ -60,39 +60,38 @@ main .vh {
     height: calc(100vh - 90px);
 }
 
+.pg-heading{
+    position: absolute;
+    display: flex;
+    width: 75vw;
+    height: 69px;
+    z-index: 5;
+    background-color: #FDEDFC;
+    align-items: center;
+    padding-left: 35px;
+    box-sizing: content-box;
+
+}
+
 /* HOME PAGE */
 
 #home-pg-main #aside-left {
-    /* position: absolute;
-    background-color: #FFFBD5;
-    width: 75%;
-    height: 34%;
-    left: 0px;
-   z-index: 2;  */
-    /* margin-top: 33%;
-    margin-bottom: 33%; */
     display: flex;
     align-items: center;
+    flex-direction: row;
     position: absolute;
     height: inherit;
     width: 75%;
     left: 0px;
+    flex-wrap: wrap;
     z-index: 1;
 }
-
-#home-pg-main #aside-left img{
-    position: absolute;
-    height: 65vh;
-    width: auto;
-    z-index: 4;
-    right: 40px;
-}
-
 
 #home-pg-main #aside-left #wel-home-bkgrnd {
     background-color: #FFFBD5;
     height: 54%;
-    width: 100%;
+    padding-right: 233px;
+    width: 40%;
     position: relative;
 }
 
@@ -106,6 +105,23 @@ main .vh {
     margin-bottom: 0;
     margin-left: 35px;
 }
+
+#home-pg-main #aside-left img{
+    position: relative;
+    height: 65vh;
+    z-index: 4;
+    right: 40px;
+}
+
+/* @media screen and (max-width: 1251px) {
+    #home-pg-main #aside-left #wel-home-bkgrnd{
+        max-height: 300px;
+    }
+
+    #home-pg-main #aside-left img{
+        max-width: 38vh;
+    }
+} */
 
 #home-pg-main #aside-right{
     display: block;
@@ -131,35 +147,29 @@ main .vh {
 
 #bio-page .bio-blocks{
     position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
     height: 75vh;
     width: 85%;
-    line-height: 55vh;
     margin: 0;
     text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 20vh;
+    font-size: 4vh;
+
 }
 
 #bio-page .bio-blocks h2{
     font-weight: normal;
+    width: 100%;
 }
 
 #bio-page .bio-blocks p{
-    display: none;
+    z-index: 10;
+    width: 100%;
 }
 
-/* #bio-page .bio-blocks:hover {
-    filter: brightness(90%);
-   
-} */
-
- /* filter: drop-shadow(2px 4px 6px rgb(153, 153, 153)) brightness(1.03); */
-
-/* #bio-page .bio-blocks:hover h2{
-    display: none;
-}
-
-#bio-page .bio-blocks:hover p{
-    display: block;
-} */
 
 #bio-page #about-me{
     background-color: #FFFBD5;
@@ -215,16 +225,17 @@ main .vh {
 }
 
 #portf-pg-main .portf-section .portf-proj-img {
-    /* position: relative; */
     position: relative;
+    display: flex;
+    justify-content: center;
     background: lightgrey;
-    width: 340px;
+    width: 350px;
     margin-top: 20px;
     height: 350px;
+    overflow: hidden;
 }
 
 #portf-pg-main .portf-section .portf-proj-img img {
-    max-width: 100%;
     max-height: 100%;
 }
 
@@ -242,15 +253,27 @@ main .vh {
 
 /* Contact */
 
+#contact-pg{
+    min-height: 373px !important;
+}
+
+#contact-pg #contact-form-container{
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFBD5;
+    height: calc(100% - 50px);
+    width: 100%;
+}
+
 #contact-pg  #contact-form{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #FFFBD5;
     width: 100%;
-    position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 75%;
 }
 
 #contact-pg #contact-form *{
@@ -264,6 +287,7 @@ main .vh {
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #contact-pg #contact-form .form-item{
@@ -272,14 +296,32 @@ main .vh {
     margin: 7px;
 }
 
+#contact-pg #contact-form .form-item-span{
+    display: inline;
+    width: 414px;
+    margin: 7px;
+}
+
+#contact-pg #contact-form .form-flex-child .form-item-span #message-area{
+    height: 100px;
+}
+
 #contact-pg #contact-form #submit-contact-form{
     text-rendering: auto;
     color: buttontext;
     background-color: #FDEDFC;
-   
-  
 }
 
+@media screen and (max-width: 427px) {
+    #contact-pg{
+        min-height: 700px !important;
+    }
+    #contact-pg #contact-form .form-item-span{
+        width: 200px;
+    }
+
+
+}
 
 
 
