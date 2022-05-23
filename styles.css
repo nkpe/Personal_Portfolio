@@ -156,7 +156,9 @@ main .vh {
     text-align: center;
     box-sizing: border-box;
     padding-bottom: 20vh;
-    font-size: 4vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3.25vh;
 
 }
 
@@ -254,7 +256,7 @@ main .vh {
 /* Contact */
 
 #contact-pg{
-    min-height: 373px !important;
+    min-height: 445px !important;
 }
 
 #contact-pg #contact-form-container{
@@ -273,7 +275,8 @@ main .vh {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    height: 75%;
+    /* height: 75%;
+    max-height: 400px; */
 }
 
 #contact-pg #contact-form *{
