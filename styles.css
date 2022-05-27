@@ -8,7 +8,7 @@ body {
     height: 100vh;
 }
 
-body * {
+body *{
     color: rgb(107 107 107) !important;
 }
 
@@ -23,10 +23,10 @@ header {
     line-height: 90px;
 }
 
-header .logo-home {
+header .logo-home{
     position: relative;
     height: inherit;
-}
+} 
 
 header .logo-home img {
     align-self: left;
@@ -43,14 +43,14 @@ header nav {
     float: right;
 }
 
-header nav a {
+header nav a{
     display: inline;
     list-style-type: none;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-header nav a:hover {
+header nav a:hover{
     font-weight: bold;
 }
 
@@ -59,7 +59,7 @@ main .vh {
     height: calc(100vh - 90px);
 }
 
-.pg-heading {
+.pg-heading{
     position: absolute;
     display: flex;
     width: 75vw;
@@ -78,43 +78,42 @@ main .vh {
     display: flex;
     align-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
     position: absolute;
     height: inherit;
-    width: 85%;
+    width: 75%;
     left: 0px;
+    flex-wrap: wrap;
     z-index: 1;
 }
 
 #home-pg-main #aside-left #wel-home-bkgrnd {
     background-color: #FFFBD5;
+    height: 54%;
+    padding-right: 233px;
+    width: 40%;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-between;
-    height: 57%;
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;   
 }
 
 #home-pg-main #aside-left #wel-home-bkgrnd h1 {
-    margin: 0;
-    font-size: 4vw;
     font-weight: normal;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 35px;
 }
 
-#home-pg-main #aside-left #img-home-container {
-    height: 100%;
-    width: auto;
-   
+#home-pg-main #aside-left img{
+    position: relative;
+    height: 65vh;
+    z-index: 4;
+    right: 40px;
 }
 
 
-#home-pg-main #aside-right {
+#home-pg-main #aside-right{
     display: block;
     position: absolute;
     height: inherit;
@@ -125,7 +124,7 @@ main .vh {
 }
 
 /* BIO PAGE  */
-.long-page {
+.long-page{
     display: block;
     position: relative;
     overflow: hidden;
@@ -135,7 +134,8 @@ main .vh {
     height: 220vh;
 }
 
-#bio-page .bio-blocks {
+
+#bio-page .bio-blocks{
     position: relative;
     display: flex;
     align-content: center;
@@ -146,42 +146,40 @@ main .vh {
     text-align: center;
     box-sizing: border-box;
     padding-bottom: 20vh;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 3.25vh;
+    font-size: 4vh;
 
 }
 
-#bio-page .bio-blocks h2 {
+#bio-page .bio-blocks h2{
     font-weight: normal;
     width: 100%;
 }
 
-#bio-page .bio-blocks p {
+#bio-page .bio-blocks p{
     z-index: 10;
     width: 100%;
 }
 
 
-#bio-page #about-me {
+#bio-page #about-me{
     background-color: #FFFBD5;
     top: 0;
     float: left;
 }
 
-#bio-page #bio-background {
+#bio-page #bio-background{
     background-color: #FDEDFC;
     float: right;
     transform: translateY(-20vh);
 }
 
-#bio-page #bio-present {
+#bio-page #bio-present{
     background-color: #D4E4FD;
     float: left;
     transform: translateY(-40vh);
 }
 
-#bio-page #bio-interests {
+#bio-page #bio-interests{
     background-color: #FDF1D4;
     float: right;
     transform: translateY(-60vh);
@@ -190,7 +188,7 @@ main .vh {
 
 /* Portfolio */
 
-#portf-pg-main section {
+#portf-pg-main section{
     padding-bottom: 40px;
 }
 
@@ -207,7 +205,7 @@ main .vh {
     margin-top: -20px;
 }
 
-#port-pg-main .portf-h2-cont {
+#port-pg-main .portf-h2-cont{
     padding-top: 20px;
 }
 
@@ -245,11 +243,11 @@ main .vh {
 
 /* Contact */
 
-#contact-pg {
-    min-height: 445px !important;
+#contact-pg{
+    min-height: 373px !important;
 }
 
-#contact-pg #contact-form-container {
+#contact-pg #contact-form-container{
     position: relative;
     top: 50px;
     display: flex;
@@ -259,58 +257,56 @@ main .vh {
     width: 100%;
 }
 
-#contact-pg #contact-form {
+#contact-pg  #contact-form{
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    /* height: 75%;
-    max-height: 400px; */
+    height: 75%;
 }
 
-#contact-pg #contact-form * {
+#contact-pg #contact-form *{
     font-family: inherit;
     border: none;
     width: 100%;
     resize: none;
 }
 
-#contact-pg #contact-form .form-flex-child {
+#contact-pg #contact-form .form-flex-child{
     width: 100vw;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#contact-pg #contact-form .form-item {
+#contact-pg #contact-form .form-item{
     display: inline;
     width: 200px;
     margin: 7px;
 }
 
-#contact-pg #contact-form .form-item-span {
+#contact-pg #contact-form .form-item-span{
     display: inline;
     width: 414px;
     margin: 7px;
 }
 
-#contact-pg #contact-form .form-flex-child .form-item-span #message-area {
+#contact-pg #contact-form .form-flex-child .form-item-span #message-area{
     height: 100px;
 }
 
-#contact-pg #contact-form #submit-contact-form {
+#contact-pg #contact-form #submit-contact-form{
     text-rendering: auto;
     color: buttontext;
     background-color: #FDEDFC;
 }
 
 @media screen and (max-width: 427px) {
-    #contact-pg {
+    #contact-pg{
         min-height: 700px !important;
     }
-
-    #contact-pg #contact-form .form-item-span {
+    #contact-pg #contact-form .form-item-span{
         width: 200px;
     }
 
@@ -322,33 +318,33 @@ main .vh {
 /* Footer  */
 
 footer {
-    position: relative;
-    background-color: #D4E4FD;
-    height: 90px;
-    bottom: 0;
-    padding: 20px;
+      position: relative;
+      background-color: #D4E4FD;
+      height: 90px;
+      bottom: 0;
+      padding: 20px;
 }
 
-footer .footer-left {
+footer .footer-left{
     position: relative;
     float: left;
 }
 
-footer .footer-left ul {
+footer .footer-left ul{
     margin: 0;
 }
 
-footer .footer-left ul li {
+footer .footer-left ul li{
     list-style-type: none;
 
 }
 
-footer .social-footer {
+footer .social-footer{
     position: relative;
     float: right;
 }
 
-footer .social-footer .fa-brands {
+footer .social-footer .fa-brands{
     font-size: 250%;
     padding-left: 10px;
 }
