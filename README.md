@@ -42,7 +42,6 @@ GitHub and LinkedIn links in footer so its easy to contact me through these chan
 * GitHub
 
 # Testing
-
 While building the website I regularly used Google Chrome, FireFox and Edge browsers to render my code, checking for any broken code and incompatibility.
 The use of the Dev Tools built into Chrome to test responsiveness of the website. 
 

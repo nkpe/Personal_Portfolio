@@ -1,3 +1,5 @@
+/* Small Gap at end of about page - between interess and footer */
+
 html {
     margin: 0;
 }
@@ -6,7 +8,6 @@ body {
     margin: 0;
     font-family: Actor, sans-serif;
     height: 100vh;
-    /* overflow: hidden; */
 }
 
 body * {
@@ -70,7 +71,6 @@ main .vh {
     align-items: center;
     padding-left: 35px;
     box-sizing: content-box;
-
 }
 
 /* HOME PAGE */
@@ -99,7 +99,7 @@ main .vh {
     height: 57%;
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 #home-pg-main #aside-left #wel-home-bkgrnd h1 {
@@ -111,29 +111,12 @@ main .vh {
 #home-pg-main #aside-left #img-home-container {
     height: 100%;
     width: auto;
-   
 }
 
 
 #home-pg-main #aside-left #img-home-container img {
     height: inherit;
 }
-
-@media screen and (max-width: 700px) {
-    #home-pg-main #aside-left #wel-home-bkgrnd {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-content: space-around;
-        height: 65%;
-    }
-
-    #home-pg-main #aside-left #img-home-container {
-        max-height: 260px;
-        height: 94%;
-    }
-}
-
-
 
 #home-pg-main #aside-right {
     display: block;
@@ -146,6 +129,7 @@ main .vh {
 }
 
 /* BIO PAGE  */
+
 .long-page {
     display: block;
     position: relative;
@@ -170,7 +154,6 @@ main .vh {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 3.25vh;
-
 }
 
 #bio-page .bio-blocks h2 {
@@ -182,7 +165,6 @@ main .vh {
     z-index: 10;
     width: 100%;
 }
-
 
 #bio-page #about-me {
     background-color: #FFFBD5;
@@ -264,7 +246,11 @@ main .vh {
     background-color: rgba(189, 232, 174, 0.51);
 }
 
-/* Contact */
+/* Contact Page*/
+
+.form-field-background {
+    background-color: white;
+}
 
 #contact-pg {
     min-height: 445px !important;
@@ -286,8 +272,6 @@ main .vh {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    /* height: 75%;
-    max-height: 400px; */
 }
 
 #contact-pg #contact-form * {
@@ -326,20 +310,6 @@ main .vh {
     background-color: #FDEDFC;
 }
 
-@media screen and (max-width: 427px) {
-    #contact-pg {
-        min-height: 700px !important;
-    }
-
-    #contact-pg #contact-form .form-item-span {
-        width: 200px;
-    }
-
-
-}
-
-
-
 /* Footer  */
 
 footer {
@@ -372,4 +342,34 @@ footer .social-footer {
 footer .social-footer .fa-brands {
     font-size: 250%;
     padding-left: 10px;
+}
+
+/* Responsive Code */
+
+/* HOME PAGE */
+
+@media screen and (max-width: 700px) {
+    #home-pg-main #aside-left #wel-home-bkgrnd {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-around;
+        height: 65%;
+    }
+
+    #home-pg-main #aside-left #img-home-container {
+        max-height: 260px;
+        height: 94%;
+    }
+}
+
+/* CONTACT PAGE */
+
+@media screen and (max-width: 427px) {
+    #contact-pg {
+        min-height: 700px !important;
+    }
+
+    #contact-pg #contact-form .form-item-span {
+        width: 200px;
+    }
 }
