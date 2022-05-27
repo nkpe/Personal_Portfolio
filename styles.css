@@ -6,7 +6,6 @@ body {
     margin: 0;
     font-family: Actor, sans-serif;
     height: 100vh;
-    /* overflow: hidden; */
 }
 
 body *{
@@ -113,15 +112,6 @@ main .vh {
     right: 40px;
 }
 
-/* @media screen and (max-width: 1251px) {
-    #home-pg-main #aside-left #wel-home-bkgrnd{
-        max-height: 300px;
-    }
-
-    #home-pg-main #aside-left img{
-        max-width: 38vh;
-    }
-} */
 
 #home-pg-main #aside-right{
     display: block;
