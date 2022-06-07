@@ -5,19 +5,19 @@ Write a README.md file for your project that explains what the project does and 
 
 # Personal Portfolio - Project One
 <!-- explains what the project does and the value that it provides to its users. -->
-[Project hosting link](https://nkpe.github.io/Personal_Portfolio/index.html "Project hosted on Github Pages")
 
-The purpose of this website is to showcase myself and my work to potential employers and recruiters. The users of this website will be looking at my skills and abilities. I have included and about page as an overview of myself and my achievements, along with a portfolio page so users can see examples of my work. A contact page allows any users to get in touch with me should they have any queries. 
+
+The purpose of this website is to showcase myself and my work to potential employers and recruiters. The users of this website will be looking at my skills and abilities for potential employment. I have included an about page as an overview of myself and my achievements, along with a portfolio page so users can see examples of my work. A contact page allows any users of the website to get in touch with me.
 
 # UX
 
-Ease of navigation to the about me, portfolio and contact me pages from every page on the website through the navigation bar within the header. 
+ The use of the navigation bar within the header allows for easy navigation to the about me, portfolio and contact me pages from every page on the website. The addition of on-hover font bolding informs the user that these are links and which link they are hovering over.
 
-About me page split into clear sections based on type of experience / personality information. 
+The about me page split into clearly defined sections, through the use of colour blocks and headers, making it easy for the user to follow as well as find a particular section. Section are split based on type of experience / personality information. 
 
-Portfolio page also split clearly into sections based on the type / skill of work, with most recent / relevant first.  
+The portfolio page is also split clearly into sections through the use of colour based on the type / skill of work, with most recent / relevant first.  
 
-GitHub and LinkedIn links in footer so its easy to contact me through these channels. 
+GitHub and LinkedIn links are included in footer so its easy to contact me from any page on the website using these channels. I have used the logo for each so they are easily recognised, while keeping the footer simple.
 
 ## Wireframes
 
@@ -42,7 +42,7 @@ GitHub and LinkedIn links in footer so its easy to contact me through these chan
 # Features to be implemented
 * GitHub and LinkIn links add to contact page.
 * Scroll animations on the about page, to show each text block when it appears on screen. 
-* Links to project pages from portfolio page. 
+* Links to project pages from portfolio page - The coding projects, once hosted, can link through to its hosting link.
 
 # Technologies used
 * HTML 5
@@ -64,6 +64,7 @@ My photo on homepage (particularly responsiveness)
 # Deployment
 
 The page has been deployed to GitHub pages for hosting. 
+[Project hosting link](https://nkpe.github.io/Personal_Portfolio/index.html "Project hosted on Github Pages")
 
 ## Repo Link
 
