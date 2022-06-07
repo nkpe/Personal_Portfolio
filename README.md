@@ -28,7 +28,6 @@ GitHub and LinkedIn links are included in footer so its easy to contact me from 
 ## index.html
 * Responsive area on left of page so text and image always show on varying screen sizes. 
 * Clear and simple to the user can navigate easily to the section they are interested in. 
-* 
 
 ## about.html
 
