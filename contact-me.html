@@ -18,6 +18,9 @@
 </head>
 
 <body>
+
+    <!-- Header -->
+
     <header>
         <a class="logo-home" href="index.html">
             <img src="imgs/logo2.png" alt="Logo for Naomi Pearse">
@@ -25,44 +28,46 @@
         <nav>
             <a href="about.html">about</a>
             <a href="portfolio.html">portfolio</a>
-            <a href="contact-me.html" name="contact-me">contact</a>
+            <a href="contact-me.html">contact</a>
         </nav>
     </header>
 
+    <!-- Main Section -->
+
     <main>
-        <section id="contact-pg" class="vh">
+        <div id="contact-pg" class="vh">
             <div class="pg-heading">
                 <h1>Contact Me</h1>
             </div>
-            <div id="contact-form-container">    
+            <div id="contact-form-container">
                 <form id="contact-form" action="https://formspree.io/f/mwkyypvq" method="POST">
                     <div class="form-flex-child">
                         <div class="form-item">
-                            <label for="first-name-input" form="contact-form">First Name *</label>
-                            <input type="text" id="first-name-input" name="first-name" placeholder="First Name"
+                            <label for="first-name-input">First Name *</label>
+                            <input type="text" id="first-name-input" class="form-field-background" name="first-name" placeholder="First Name"
                                 minlength="2" required>
                         </div>
                         <div class="form-item">
-                            <label for="surname-input" form="contact-form">Surname *</label>
-                            <input type="text" id="surname-input" name="surname" placeholder="Surname" min="2" required>
+                            <label for="surname-input">Surname *</label>
+                            <input type="text" id="surname-input" class="form-field-background" name="surname" placeholder="Surname" required>
                         </div>
                     </div>
 
                     <div class="form-flex-child">
                         <div class="form-item">
-                            <label for="email-input" form="contact-form">Email *</label>
-                            <input type="text" id="email-input" name="email" placeholder="Email" min="2" required>
+                            <label for="email-input">Email *</label>
+                            <input type="text" id="email-input" class="form-field-background" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-item">
-                            <label for="tele-input" form="contact-form">Telephone Number</label>
-                            <input type="text" id="tele-input" placeholder="Telephone" min="5">
+                            <label for="tele-input">Telephone Number</label>
+                            <input type="text" id="tele-input" class="form-field-background" placeholder="Telephone">
                         </div>
                     </div>
 
                     <div class="form-flex-child">
                         <div class="form-item">
-                            </input><label for="contact-pref-select" form="contact-form">Contact me by</label>
-                            <select id="contact-pref-select" name="contact-pref">
+                            <label for="contact-pref-select">Contact me by</label>
+                            <select id="contact-pref-select" class="form-field-background" name="contact-pref">
                                 <option value="" disabled selected hidden class="option-selected">Preference</option>
                                 <option value="telephone">Telephone</option>
                                 <option value="email">Email</option>
@@ -71,9 +76,10 @@
                             </select>
                         </div>
                         <div class="form-item">
-                            <label for="country-select" form="contact-form">Country</label>
-                            <input list="countries" name="country" id="country-list" autocomplete="off">
-                            <datalist id="countries" name="country-list">
+                            <label for="country-list">Country</label>
+                            <input list="countries" name="country" id="country-list" class="form-field-background" autocomplete="off">
+                            <datalist id="countries">
+                                <!-- List of countries taken from this link - https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
                                 <option value="Algeria">Algeria</option>
@@ -111,7 +117,8 @@
                                 <option value="Colombia">Colombia</option>
                                 <option value="Comoros">Comoros</option>
                                 <option value="Congo">Congo</option>
-                                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                                <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of
+                                    The</option>
                                 <option value="Cook Islands">Cook Islands</option>
                                 <option value="Costa Rica">Costa Rica</option>
                                 <option value="Cote D'ivoire">Cote D'ivoire</option>
@@ -155,7 +162,8 @@
                                 <option value="Guinea-bissau">Guinea-bissau</option>
                                 <option value="Guyana">Guyana</option>
                                 <option value="Haiti">Haiti</option>
-                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands
+                                </option>
                                 <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
                                 <option value="Honduras">Honduras</option>
                                 <option value="Hong Kong">Hong Kong</option>
@@ -176,12 +184,14 @@
                                 <option value="Kazakhstan">Kazakhstan</option>
                                 <option value="Kenya">Kenya</option>
                                 <option value="Kiribati">Kiribati</option>
-                                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of
+                                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's
+                                    Republic of
                                 </option>
                                 <option value="Korea, Republic of">Korea, Republic of</option>
                                 <option value="Kuwait">Kuwait</option>
                                 <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic
+                                </option>
                                 <option value="Latvia">Latvia</option>
                                 <option value="Lebanon">Lebanon</option>
                                 <option value="Lesotho">Lesotho</option>
@@ -191,7 +201,8 @@
                                 <option value="Lithuania">Lithuania</option>
                                 <option value="Luxembourg">Luxembourg</option>
                                 <option value="Macao">Macao</option>
-                                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic
+                                <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former
+                                    Yugoslav Republic
                                     of</option>
                                 <option value="Madagascar">Madagascar</option>
                                 <option value="Malawi">Malawi</option>
@@ -264,7 +275,8 @@
                                 <option value="United Arab Emirates">United Arab Emirates</option>
                                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="United States">United States</option>
-                                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                <option value="United States Minor Outlying Islands">United States Minor Outlying
+                                    Islands</option>
                                 <option value="Uruguay">Uruguay</option>
                                 <option value="Uzbekistan">Uzbekistan</option>
                                 <option value="Venezuela">Venezuela</option>
@@ -277,38 +289,39 @@
                             </datalist>
                         </div>
                     </div>
-            
+
                     <div class="form-flex-child">
                         <div class="form-item-span">
-                            <label for="message-area" form="contact-form">Message</label>
-                            <textarea id="message-area" name="message" value="text" placeholder="I'd love to hear from you!"
+                            <label for="message-area">Message</label>
+                            <textarea id="message-area" class="form-field-background" name="message" placeholder="I'd love to hear from you!"
                                 required></textarea>
-                        </div>     
-                        
+                        </div>
+
                     </div>
                     <div class="form-flex-child">
-                        <button type="submit" name="submit-contact-form" id="submit-contact-form" class="form-item-span" value="Submit" form="contact-form">Submit</button>
+                        <button type="submit" id="submit-contact-form" class="form-item-span" form="contact-form">Submit</button>
                     </div>
                 </form>
             </div>
-        </section>
-
+        </div>
     </main>
+
+    <!-- Footer/ -->
 
     <footer>
         <div class="footer-left">
             <ul>
                 <li>
-                    <a href="contact-me.html" name="contact-me">Contact Me</a>
+                    <a href="contact-me.html">Contact Me</a>
                 </li>
             </ul>
 
         </div>
         <div class="social-footer">
-            <a href="https://github.com/nkpe" target="-blank">
+            <a href="https://github.com/nkpe" target="_blank">
                 <i class="fa-brands fa-github-square"></i>
             </a>
-            <a href="https://www.linkedin.com/in/naomipearse/" target="-blank">
+            <a href="https://www.linkedin.com/in/naomipearse/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
             <p id="copyright">&#169; Naomi Pearse 2022</p>
