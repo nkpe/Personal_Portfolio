@@ -7,7 +7,7 @@ Write a README.md file for your project that explains what the project does and 
 <!-- explains what the project does and the value that it provides to its users. -->
 [Project hosting link](https://nkpe.github.io/Personal_Portfolio/index.html "Project hosted on Github Pages")
 
-The purpose of this website is to showcase myself and my work to potential employers and recruiters. 
+The purpose of this website is to showcase myself and my work to potential employers and recruiters. The users of this website will be looking at my skills and abilities. I have included and about page as an overview of myself and my achievements, along with a portfolio page so users can see examples of my work. A contact page allows any users to get in touch with me should they have any queries. 
 
 # UX
 
@@ -22,15 +22,26 @@ GitHub and LinkedIn links in footer so its easy to contact me through these chan
 ## Wireframes
 
 # Features
+## All Pages
+* Header with Nav bar and branding for easy navigation of the website. 
+    * Use of CSS on hover on nav links so the user helps user experience, showing these are links. 
+* Footer with contact information so the user can get in touch from any web page. 
 
 ## index.html
+* Responsive area on left of page so text and image always show on varying screen sizes. 
+* Clear and simple to the user can navigate easily to the section they are interested in. 
+* 
+
 ## about.html
+
+
 ## portfolio.html
+* Flexbox used to create a fully responsive and even layout of images. 
 ## contact.html
 
 # Features to be implemented
 * GitHub and LinkIn links add to contact page.
-* Scroll animations on the about page. 
+* Scroll animations on the about page, to show each text block when it appears on screen. 
 * Links to project pages from portfolio page. 
 
 # Technologies used
@@ -42,8 +53,9 @@ GitHub and LinkedIn links in footer so its easy to contact me through these chan
 * GitHub
 
 # Testing
-While building the website I regularly used Google Chrome, FireFox and Edge browsers to render my code, checking for any broken code and incompatibility.
-The use of the Dev Tools built into Chrome to test responsiveness of the website. 
+While building the website I regularly used Google Chrome, FireFox, Safari and Edge browsers to render my code, checking for any broken code and incompatibility. One example I found that Firefox and Safari rendered the select tag in HTML with a grey background, making, giving the form fields inconsistent styling. I fixed this by adding a class of form-field-background to each form field with a specified colour. 
+
+I used the Dev Tools built into Chrome to test responsiveness of the website. When conducting these tests I found the responsiveness of the home page photo and the form fields needed to be handled with media queries. 
 
 ## HTML & CSS Validator   
 
