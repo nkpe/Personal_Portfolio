@@ -31,7 +31,6 @@ header .logo-home {
 }
 
 header .logo-home img {
-    align-self: left;
     height: inherit;
     width: auto;
     float: left;
@@ -56,9 +55,15 @@ header nav a:hover {
     font-weight: bold;
 }
 
-main .vh {
+.vh {
     min-height: 330px;
     height: calc(100vh - 90px);
+}
+
+.long-page {
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 .pg-heading {
@@ -73,6 +78,9 @@ main .vh {
     box-sizing: content-box;
 }
 
+.pg-heading h1{
+    font-weight: 400;
+}
 /* HOME PAGE */
 
 #home-pg-main #aside-left {
@@ -130,11 +138,6 @@ main .vh {
 
 /* BIO PAGE  */
 
-.long-page {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
 
 #bio-page {
     height: 220vh;
@@ -213,9 +216,6 @@ main .vh {
 #portf-pg-main  .portf-h2-cont {
     padding-top: 20px;
     text-align: center;
-}
-
-#portf-pg-main .portf-h2-cont h2 {
     margin-top: 0;
     font-weight: 400;
 }

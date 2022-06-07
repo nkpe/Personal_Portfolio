@@ -28,14 +28,14 @@
         <nav>
             <a href="about.html">about</a>
             <a href="portfolio.html">portfolio</a>
-            <a href="contact-me.html" name="contact-me">contact</a>
+            <a href="contact-me.html">contact</a>
         </nav>
     </header>
 
     <!-- Main Section -->
 
     <main>
-        <section id="contact-pg" class="vh">
+        <div id="contact-pg" class="vh">
             <div class="pg-heading">
                 <h1>Contact Me</h1>
             </div>
@@ -43,30 +43,30 @@
                 <form id="contact-form" action="https://formspree.io/f/mwkyypvq" method="POST">
                     <div class="form-flex-child">
                         <div class="form-item">
-                            <label for="first-name-input" form="contact-form">First Name *</label>
+                            <label for="first-name-input">First Name *</label>
                             <input type="text" id="first-name-input" class="form-field-background" name="first-name" placeholder="First Name"
                                 minlength="2" required>
                         </div>
                         <div class="form-item">
-                            <label for="surname-input" form="contact-form">Surname *</label>
-                            <input type="text" id="surname-input" class="form-field-background" name="surname" placeholder="Surname" min="2" required>
+                            <label for="surname-input">Surname *</label>
+                            <input type="text" id="surname-input" class="form-field-background" name="surname" placeholder="Surname" required>
                         </div>
                     </div>
 
                     <div class="form-flex-child">
                         <div class="form-item">
-                            <label for="email-input" form="contact-form">Email *</label>
-                            <input type="text" id="email-input" class="form-field-background" name="email" placeholder="Email" min="2" required>
+                            <label for="email-input">Email *</label>
+                            <input type="text" id="email-input" class="form-field-background" name="email" placeholder="Email" required>
                         </div>
                         <div class="form-item">
-                            <label for="tele-input" form="contact-form">Telephone Number</label>
-                            <input type="text" id="tele-input" class="form-field-background" placeholder="Telephone" min="5">
+                            <label for="tele-input">Telephone Number</label>
+                            <input type="text" id="tele-input" class="form-field-background" placeholder="Telephone">
                         </div>
                     </div>
 
                     <div class="form-flex-child">
                         <div class="form-item">
-                            <label for="contact-pref-select" form="contact-form">Contact me by</label>
+                            <label for="contact-pref-select">Contact me by</label>
                             <select id="contact-pref-select" class="form-field-background" name="contact-pref">
                                 <option value="" disabled selected hidden class="option-selected">Preference</option>
                                 <option value="telephone">Telephone</option>
@@ -76,9 +76,9 @@
                             </select>
                         </div>
                         <div class="form-item">
-                            <label for="country-select" form="contact-form">Country</label>
+                            <label for="country-list">Country</label>
                             <input list="countries" name="country" id="country-list" class="form-field-background" autocomplete="off">
-                            <datalist id="countries" name="country-list">
+                            <datalist id="countries">
                                 <!-- List of countries taken from this link - https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -292,19 +292,18 @@
 
                     <div class="form-flex-child">
                         <div class="form-item-span">
-                            <label for="message-area" form="contact-form">Message</label>
+                            <label for="message-area">Message</label>
                             <textarea id="message-area" class="form-field-background" name="message" placeholder="I'd love to hear from you!"
                                 required></textarea>
                         </div>
 
                     </div>
                     <div class="form-flex-child">
-                        <button type="submit" name="submit-contact-form" id="submit-contact-form" class="form-item-span"
-                            value="Submit" form="contact-form">Submit</button>
+                        <button type="submit" id="submit-contact-form" class="form-item-span" form="contact-form">Submit</button>
                     </div>
                 </form>
             </div>
-        </section>
+        </div>
     </main>
 
     <!-- Footer/ -->
@@ -313,7 +312,7 @@
         <div class="footer-left">
             <ul>
                 <li>
-                    <a href="contact-me.html" name="contact-me">Contact Me</a>
+                    <a href="contact-me.html">Contact Me</a>
                 </li>
             </ul>
 
