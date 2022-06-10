@@ -7,14 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naomi Pearse</title>
     <link rel="shortcut icon" href="imgs/logo.ico">
-
-
     <!-- Google Fonts: lines 10-12 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -39,24 +36,27 @@
             <div class="pg-heading">
                 <h1>Contact Me</h1>
             </div>
+            <!-- Form Start -->
             <div id="contact-form-container">
                 <form id="contact-form" action="https://formspree.io/f/mwkyypvq" method="POST">
                     <div class="form-flex-child">
                         <div class="form-item">
                             <label for="first-name-input">First Name *</label>
-                            <input type="text" id="first-name-input" class="form-field-background" name="first-name" placeholder="First Name"
-                                minlength="2" required>
+                            <input type="text" id="first-name-input" class="form-field-background" name="first-name"
+                                placeholder="First Name" minlength="2" required>
                         </div>
                         <div class="form-item">
                             <label for="surname-input">Surname *</label>
-                            <input type="text" id="surname-input" class="form-field-background" name="surname" placeholder="Surname" required>
+                            <input type="text" id="surname-input" class="form-field-background" name="surname"
+                                placeholder="Surname" required>
                         </div>
                     </div>
 
                     <div class="form-flex-child">
                         <div class="form-item">
                             <label for="email-input">Email *</label>
-                            <input type="text" id="email-input" class="form-field-background" name="email" placeholder="Email" required>
+                            <input type="text" id="email-input" class="form-field-background" name="email"
+                                placeholder="Email" required>
                         </div>
                         <div class="form-item">
                             <label for="tele-input">Telephone Number</label>
@@ -77,7 +77,8 @@
                         </div>
                         <div class="form-item">
                             <label for="country-list">Country</label>
-                            <input list="countries" name="country" id="country-list" class="form-field-background" autocomplete="off">
+                            <input list="countries" name="country" id="country-list" class="form-field-background"
+                                autocomplete="off">
                             <datalist id="countries">
                                 <!-- List of countries taken from this link - https://gist.github.com/danrovito/977bcb97c9c2dfd3398a -->
                                 <option value="Afghanistan">Afghanistan</option>
@@ -293,20 +294,23 @@
                     <div class="form-flex-child">
                         <div class="form-item-span">
                             <label for="message-area">Message</label>
-                            <textarea id="message-area" class="form-field-background" name="message" placeholder="I'd love to hear from you!"
-                                required></textarea>
+                            <textarea id="message-area" class="form-field-background" name="message"
+                                placeholder="I'd love to hear from you!" required></textarea>
                         </div>
-
                     </div>
+
+                    <!-- Form Submit Button -->
                     <div class="form-flex-child">
-                        <button type="submit" id="submit-contact-form" class="form-item-span" form="contact-form">Submit</button>
+                        <button type="submit" id="submit-contact-form" class="form-item-span"
+                            form="contact-form">Submit</button>
                     </div>
                 </form>
+                <!-- Form End -->
             </div>
         </div>
     </main>
 
-    <!-- Footer/ -->
+    <!-- Footer -->
 
     <footer>
         <div class="footer-left">
@@ -315,7 +319,6 @@
                     <a href="contact-me.html">Contact Me</a>
                 </li>
             </ul>
-
         </div>
         <div class="social-footer">
             <a href="https://github.com/nkpe" target="_blank">
@@ -325,10 +328,11 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
             <p id="copyright">&#169; Naomi Pearse 2022</p>
-
         </div>
     </footer>
+
     <script src="https://kit.fontawesome.com/f469f6780c.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
