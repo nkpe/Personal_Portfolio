@@ -1,16 +1,16 @@
 html {
     margin: 0;
+    background-color: #7DBECA;
 }
 
 body {
     margin: 0;
     font-family: Actor, sans-serif;
     height: 100vh;
-    /* overflow: hidden; */
 }
 
 body * {
-    color: rgb(107 107 107) !important;
+    color: white;
 }
 
 a {
@@ -18,6 +18,9 @@ a {
 }
 
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     height: 90px;
     width: 100%;
     overflow: hidden;
@@ -25,23 +28,11 @@ header {
 }
 
 header .logo-home {
-    position: relative;
-    height: inherit;
-}
-
-header .logo-home img {
-    align-self: left;
-    height: inherit;
-    width: auto;
-    float: left;
-    margin-left: 20px;
+    height: 90%
 }
 
 header nav {
-    position: relative;
-    background: rgba(189, 232, 174, 0.51);
     width: fit-content;
-    float: right;
 }
 
 header nav a {
@@ -55,9 +46,22 @@ header nav a:hover {
     font-weight: bold;
 }
 
-main .vh {
+header .logo-home img {
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+}
+
+/* PAGE LAYOUTS  */
+.vh {
     min-height: 330px;
     height: calc(100vh - 90px);
+}
+
+.long-page {
+    display: block;
+    position: relative;
+    overflow: hidden;
 }
 
 .pg-heading {
@@ -70,11 +74,13 @@ main .vh {
     align-items: center;
     padding-left: 35px;
     box-sizing: content-box;
+}
 
+.pg-heading h1 {
+    font-weight: 400;
 }
 
 /* HOME PAGE */
-
 #home-pg-main #aside-left {
     display: flex;
     align-items: center;
@@ -88,7 +94,6 @@ main .vh {
 }
 
 #home-pg-main #aside-left #wel-home-bkgrnd {
-    background-color: #FFFBD5;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -99,7 +104,7 @@ main .vh {
     height: 57%;
     width: 100%;
     padding: 10px;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 #home-pg-main #aside-left #wel-home-bkgrnd h1 {
@@ -111,29 +116,11 @@ main .vh {
 #home-pg-main #aside-left #img-home-container {
     height: 100%;
     width: auto;
-   
 }
-
 
 #home-pg-main #aside-left #img-home-container img {
     height: inherit;
 }
-
-@media screen and (max-width: 700px) {
-    #home-pg-main #aside-left #wel-home-bkgrnd {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        align-content: space-around;
-        height: 65%;
-    }
-
-    #home-pg-main #aside-left #img-home-container {
-        max-height: 260px;
-        height: 94%;
-    }
-}
-
-
 
 #home-pg-main #aside-right {
     display: block;
@@ -146,12 +133,6 @@ main .vh {
 }
 
 /* BIO PAGE  */
-.long-page {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
 #bio-page {
     height: 220vh;
 }
@@ -170,7 +151,6 @@ main .vh {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 3.25vh;
-
 }
 
 #bio-page .bio-blocks h2 {
@@ -183,34 +163,28 @@ main .vh {
     width: 100%;
 }
 
-
 #bio-page #about-me {
-    background-color: #FFFBD5;
     top: 0;
     float: left;
 }
 
 #bio-page #bio-background {
-    background-color: #FDEDFC;
     float: right;
     transform: translateY(-20vh);
 }
 
 #bio-page #bio-present {
-    background-color: #D4E4FD;
     float: left;
     transform: translateY(-40vh);
 }
 
 #bio-page #bio-interests {
-    background-color: #FDF1D4;
     float: right;
     transform: translateY(-60vh);
     height: 55vh;
 }
 
-/* Portfolio */
-
+/* PORTFOLIO */
 #portf-pg-main section {
     padding-bottom: 40px;
 }
@@ -228,11 +202,9 @@ main .vh {
     margin-top: -20px;
 }
 
-#port-pg-main .portf-h2-cont {
+#portf-pg-main .portf-h2-cont {
     padding-top: 20px;
-}
-
-#portf-pg-main .portf-h2-cont h2 {
+    text-align: center;
     margin-top: 0;
     font-weight: 400;
 }
@@ -240,16 +212,22 @@ main .vh {
 #portf-pg-main .portf-section .portf-proj-img {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    background: lightgrey;
     width: 350px;
     margin-top: 20px;
-    height: 350px;
+    height: 368px;
     overflow: hidden;
 }
 
 #portf-pg-main .portf-section .portf-proj-img img {
-    max-height: 100%;
+    max-height: 90%;
+}
+
+#portf-pg-main .portf-section .portf-proj-img h3 {
+    font-size: 15px;
+    margin: 7px;
+    font-weight: 400;
 }
 
 #portf-pg-main #portf-code-bkg {
@@ -264,7 +242,11 @@ main .vh {
     background-color: rgba(189, 232, 174, 0.51);
 }
 
-/* Contact */
+/* CONTACT PAGE*/
+.form-field-background {
+    background-color: white;
+    -webkit-appearance: none;
+}
 
 #contact-pg {
     min-height: 445px !important;
@@ -286,8 +268,6 @@ main .vh {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    /* height: 75%;
-    max-height: 400px; */
 }
 
 #contact-pg #contact-form * {
@@ -326,22 +306,7 @@ main .vh {
     background-color: #FDEDFC;
 }
 
-@media screen and (max-width: 427px) {
-    #contact-pg {
-        min-height: 700px !important;
-    }
-
-    #contact-pg #contact-form .form-item-span {
-        width: 200px;
-    }
-
-
-}
-
-
-
-/* Footer  */
-
+/* FOOTER */
 footer {
     position: relative;
     background-color: #D4E4FD;
@@ -372,4 +337,32 @@ footer .social-footer {
 footer .social-footer .fa-brands {
     font-size: 250%;
     padding-left: 10px;
+}
+
+/* RESPONSIVE CODE */
+
+/* HOME PAGE */
+@media screen and (max-width: 700px) {
+    #home-pg-main #aside-left #wel-home-bkgrnd {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-around;
+        height: 65%;
+    }
+
+    #home-pg-main #aside-left #img-home-container {
+        max-height: 260px;
+        height: 94%;
+    }
+}
+
+/* CONTACT PAGE */
+@media screen and (max-width: 427px) {
+    #contact-pg {
+        min-height: 700px !important;
+    }
+
+    #contact-pg #contact-form .form-item-span {
+        width: 200px;
+    }
 }
