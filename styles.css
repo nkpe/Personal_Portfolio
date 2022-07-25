@@ -25,31 +25,33 @@ header {
     width: 100%;
     overflow: hidden;
     line-height: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 header .logo-home {
     height: 90%
 }
 
+header .logo-home img {
+    height: 100%;
+    width: auto;
+}
+
 header nav {
+    display: flex;
+    column-gap: 10px;
     width: fit-content;
 }
 
 header nav a {
     display: inline;
     list-style-type: none;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 header nav a:hover {
     font-weight: bold;
-}
-
-header .logo-home img {
-    height: 100%;
-    width: auto;
-    margin-right: 20px;
 }
 
 /* PAGE LAYOUTS  */
@@ -138,19 +140,26 @@ header .logo-home img {
 }
 
 #bio-page .bio-blocks {
-    position: relative;
     display: flex;
+    flex-direction: column;
     align-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 75vh;
     width: 85%;
     margin: 0;
     text-align: center;
     box-sizing: border-box;
+    border: #7DBECA 5px;
+    border-style: solid;
     padding-bottom: 20vh;
     padding-left: 10px;
     padding-right: 10px;
-    font-size: 3.25vh;
+    font-size: 20px;
+    background-color: white;
+}
+
+#bio-page .bio-blocks *{
+    color: #7DBECA !important;
 }
 
 #bio-page .bio-blocks h2 {
@@ -303,40 +312,26 @@ header .logo-home img {
 #contact-pg #contact-form #submit-contact-form {
     text-rendering: auto;
     color: buttontext;
-    background-color: #FDEDFC;
 }
 
 /* FOOTER */
 footer {
-    position: relative;
-    background-color: #D4E4FD;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     height: 90px;
     bottom: 0;
-    padding: 20px;
-}
-
-footer .footer-left {
-    position: relative;
-    float: left;
-}
-
-footer .footer-left ul {
-    margin: 0;
-}
-
-footer .footer-left ul li {
-    list-style-type: none;
-
+    padding: 10px;
 }
 
 footer .social-footer {
-    position: relative;
-    float: right;
+   display: flex;
+   column-gap: 10px
 }
 
 footer .social-footer .fa-brands {
     font-size: 250%;
-    padding-left: 10px;
 }
 
 /* RESPONSIVE CODE */
