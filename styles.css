@@ -17,6 +17,12 @@ a {
     text-decoration: none !important;
 }
 
+h1 {
+    font-family: 'PT Serif', serif;
+    font-weight: normal;
+    font-size: 40px;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -72,14 +78,9 @@ header nav a:hover {
     width: 75vw;
     height: 69px;
     z-index: 5;
-    background-color: #FDEDFC;
     align-items: center;
     padding-left: 35px;
     box-sizing: content-box;
-}
-
-.pg-heading h1 {
-    font-weight: 400;
 }
 
 /* HOME PAGE */
@@ -112,7 +113,6 @@ header nav a:hover {
 #home-pg-main #aside-left #wel-home-bkgrnd h1 {
     margin: 0;
     font-size: 4vw;
-    font-weight: normal;
 }
 
 #home-pg-main #aside-left #img-home-container {
@@ -129,7 +129,6 @@ header nav a:hover {
     position: absolute;
     height: inherit;
     width: 45%;
-    background-color: #FDEDFC;
     right: 0px;
     z-index: 0;
 }
@@ -149,8 +148,6 @@ header nav a:hover {
     margin: 0;
     text-align: center;
     box-sizing: border-box;
-    border: #7DBECA 5px;
-    border-style: solid;
     padding-bottom: 20vh;
     padding-left: 10px;
     padding-right: 10px;
@@ -162,8 +159,9 @@ header nav a:hover {
     color: #7DBECA !important;
 }
 
-#bio-page .bio-blocks h2 {
+#bio-page .bio-blocks h1 {
     font-weight: normal;
+    font-family: 'PT Serif', serif;
     width: 100%;
 }
 
@@ -190,7 +188,6 @@ header nav a:hover {
 #bio-page #bio-interests {
     float: right;
     transform: translateY(-60vh);
-    height: 55vh;
 }
 
 /* PORTFOLIO */
@@ -211,7 +208,7 @@ header nav a:hover {
     margin-top: -20px;
 }
 
-#portf-pg-main .portf-h2-cont {
+#portf-pg-main .portf-h1-cont {
     padding-top: 20px;
     text-align: center;
     margin-top: 0;
@@ -239,18 +236,6 @@ header nav a:hover {
     font-weight: 400;
 }
 
-#portf-pg-main #portf-code-bkg {
-    background-color: #FFFBD5;
-}
-
-#portf-pg-main #portf-design-bkg {
-    background-color: #FDEDFC;
-}
-
-#portf-pg-main #portf-drawing-bkg {
-    background-color: rgba(189, 232, 174, 0.51);
-}
-
 /* CONTACT PAGE*/
 .form-field-background {
     background-color: white;
@@ -266,7 +251,6 @@ header nav a:hover {
     top: 50px;
     display: flex;
     align-items: center;
-    background-color: #FFFBD5;
     height: calc(100% - 50px);
     width: 100%;
 }
