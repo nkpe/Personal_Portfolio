@@ -151,6 +151,14 @@ header nav a:hover {
     color: #7DBECA !important;
 }
 
+#bio-page .shadow-left {
+    box-shadow: -10px -10px #7dbeca;
+}
+
+#bio-page .shadow-right {
+    box-shadow: 10px -10px #7dbeca;
+}
+
 #bio-page .bio-blocks h1 {
     width: 100%;
 }
@@ -236,6 +244,14 @@ header nav a:hover {
     height: 100%;
 }
 
+#contact-form-container h1 {
+    align-self: center;
+}
+
+.form-flex-child .form-item .input-style , .form-flex-child .form-item-span textarea , .form-flex-child .form-item select option {
+    color: grey !important;
+}
+
 #contact-form-container #contact-form {
     display: flex;
     flex-direction: column;
@@ -281,7 +297,40 @@ header nav a:hover {
     padding: 10px;
     resize: none;
     font-family: Actor, sans-serif;
+    height: 100px   ;
 }
+
+#contact-form-container #contact-form .form-flex-child button {
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 2px white;
+    border-style: solid;
+    margin-top: 10px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#contact-form-container #contact-form .form-flex-child button:hover {
+    border: 4px white;
+    border-style: solid;
+    font-weight: 700;
+}
+
+.social-contact {
+    justify-content: center;
+    width: 100%;
+    column-gap: 25px !important;
+}
+
+.social {
+    display: flex;
+    column-gap: 10px
+ }
+ 
+.social .fa-brands {
+     font-size: 250%;
+ }
 
 /* FOOTER */
 footer {
@@ -292,15 +341,6 @@ footer {
     height: 90px;
     bottom: 0;
     padding: 10px;
-}
-
-footer .social-footer {
-   display: flex;
-   column-gap: 10px
-}
-
-footer .social-footer .fa-brands {
-    font-size: 250%;
 }
 
 /* RESPONSIVE CODE */

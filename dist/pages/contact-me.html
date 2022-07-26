@@ -34,9 +34,17 @@
     </header>
 
     <main>
-        <section id="contact-pg" class="vh">
+        <section id="contact-pg" class="long-page">
             <div id="contact-form-container">
                 <h1>contact me</h1>
+                <div class="social-contact social">
+                    <a href="https://github.com/nkpe" target="-blank">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/naomipearse/" target="-blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
                 <form id="contact-form" action="https://formspree.io/f/mwkyypvq" method="POST">
                     <div class="form-flex-child">
                         <div class="form-item">
@@ -74,7 +82,7 @@
                         </div>
                         <div class="form-item">
                             <label for="country-select" form="contact-form">Country</label>
-                            <input class="input-style" list="countries" name="country" id="country-list" autocomplete="off">
+                            <input class="input-style" id="country-list" list="countries" name="country" autocomplete="off" placeholder="Country">
                             <datalist id="countries" name="country-list">
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -289,7 +297,8 @@
                         
                     </div>
                     <div class="form-flex-child">
-                        <button type="submit" name="submit-contact-form" id="submit-contact-form" class="form-item-span" value="Submit" form="contact-form">Submit</button>
+                        <button class="form-item-span" 
+                        id="submit-contact-form" type="submit" name="submit-contact-form"   value="Submit" form="contact-form">Submit</button>
                     </div>
                 </form>
             </div>
@@ -302,7 +311,7 @@
             <a href="#top" name="pg-top">back to top</a>
         </div>
 
-        <div class="social-footer">
+        <div class="social-footer social">
             <a href="https://github.com/nkpe" target="-blank">
                 <i class="fa-brands fa-github-square"></i>
             </a>
