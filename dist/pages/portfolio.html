@@ -1,109 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Naomi Pearse</title>
-        <link rel="shortcut icon" href="../imgs/logo.ico">
-   
-        
-        <!-- Google Fonts: lines 10-12 -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/styles.css" />
-     
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="../../index.html">home</a>
-                <a href="about.html">about</a>
-                <a href="portfolio.html">projects</a>
-                <a href="contact-me.html" name="contact-me">contact</a>
-            </nav>
-            <a class="logo-home" href="index.html">
-                <img src="../imgs/logo2.png" alt="Logo for Naomi Pearse">
-            </a>
-        </header>
 
-        <main>
-            <section id="portf-pg-main" class="long-page">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naomi Pearse</title>
+    <link rel="shortcut icon" href="../imgs/logo.ico">
 
-                <!-- Coding Portfolio -->
-                <section id="portf-code-bkg">
-                    <div class="portf-h1-cont">
-                    <h1>coding projects</h1>
+
+    <!-- Google Fonts: lines 10-12 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Actor&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../../index.html">home</a>
+            <div class="nav-spacer">|</div>
+            <a href="about.html">about</a>
+            <div class="nav-spacer">|</div>
+            <div id="projects-link">
+                <a id="nav-projects" href="portfolio.html">projects</a>
+                <div id="portfolio-dropdown">
+                    <a href="#portf-code">coding</a>
+                    <a href="#portf-design">design</a>
+                </div>
+            </div>
+            <div class="nav-spacer">|</div>
+            <a href="contact-me.html" name="contact-me">contact</a>
+        </nav>
+        <a class="logo-home" href="index.html">
+            <img src="../imgs/logo2.png" alt="Logo for Naomi Pearse">
+        </a>
+    </header>
+
+    <main>
+        <section id="portf-pg-main" class="long-page">
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Coding Portfolio -->     
+            <section class="portf-section" id="portf-code">
+                <h1>coding projects</h1>
+                <!-- Code Row 1 -->
+                <section class="portf-row">
+                    <!-- Press on Nails Project -->
+                    <div class="project-container">
+                        <a class="portf-proj-link portf-proj-img" href="https://dazzlingnails.netlify.app/" target="_blank">
+                            <img src="../imgs/coding-projects/dazzling-nails-homepage.png"
+                                alt="Website for client called Dazzling Nails." />
+                        </a>
+
+                        <div class="portf-text">
+                            <h2>Dazzling Nails - Live client</h2>
+                            <p>My client, Dazzling Nails, requires an e-commerce website to sell their press on nails. <br />
+                            This project is still in development. <br />
+                        </p>
+                            <a class="portf-proj-link" href="https://dazzlingnails.netlify.app/" target="_blank">Host Link</a>
+                            <!-- <a class="portf-proj-link" href="#" target="_blank">Source Code</a> -->
+                        </div>
                     </div>
-                    <div class="portf-section portf-code">
-                        <div class="portf-proj-img">
-                            <img src="../imgs/coding-projects/dazzling-nails-homepage.png">
-                        </div>
-                        <div class="portf-proj-img">
-                            <img src="../imgs/coding-projects/dazzling-nails-collections.png">
-                        </div>
-                        <div class="portf-proj-img">
-                            <img src="../imgs/coding-projects/dazzling-nails-prod-page.png">
+
+                    <!-- Pairs Game -->
+                    <div class="project-container">
+                        <a class="portf-proj-link portf-proj-img" href="https://nkpe.github.io/Pairs-Game/" target="_blank">
+                            <img src="../imgs/coding-projects/pair-colada-landing.png"
+                                alt="Pairs Game website." />
+                        </a>
+
+                        <div class="portf-text">
+                            <h2>Pairs Game</h2>
+                            <p>As part of my web development studies I created a pairs game. <br/> Technologies used: Javascript, HTML5, CSS3 and Bootstrap <br />
+                            </p>
+                            <a class="portf-proj-link" href="https://nkpe.github.io/Pairs-Game/" target="_blank">Host Link</a>
+                            <a class="portf-proj-link" href="https://github.com/nkpe/Pairs-Game" target="_blank">Source Code</a>
                         </div>
                     </div>
                 </section>
 
-                <!-- Design Portfolio -->
-                <section id="portf-design-bkg">
-                    <div class="portf-h1-cont">    
-                        <h1>design projects</h1>
-                    </div>
-                    <div class="portf-section portf-design-bkg">
-                        <div class="portf-proj-img">
-                            <img src="../imgs/design-projects/project-page/living-room1.png">
-                        </div>
-                        <div class="portf-proj-img">
-                            <img src="../imgs/design-projects/project-page/student-stairwell.png">
-                        </div>
-                        <div class="portf-proj-img">
-                            <img src="../imgs/design-projects/project-page/exhibstand1.png">
-                        </div>
-                    </div>
-                </section>
+                <!-- Code Row 2 -->
+                <section class="portf-row">
+                    <!-- Quiz Project - Climbing -->
+                    <div class="project-container">
+                        <a class="portf-proj-link portf-proj-img" href="https://dazzlingnails.netlify.app/" target="_blank">
+                            <img src="../imgs/coding-projects/dazzling-nails-homepage.png"
+                                alt="Website for client called Dazzling Nails." />
+                        </a>
 
-                <!-- Drawing Portfolio -->
-                <section id="portf-drawing-bkg">
-                    <div class="portf-h1-cont">
-                        <h1>drawing projects</h1>
-                    </div>
-                    <div class="portf-section portf-drawing-bkg">
-                        <div class="portf-proj-img">
-                            <img src="../imgs\drawing\flowers.jpg">
+                        <div class="portf-text">
+                            <h2>Dazzling Nails - Live client</h2>
+                            <p>My client, Dazzling Nails, requires an e-commerce website to see their press on nails. <br />
+                            This project is still in development. </p>
+                            <a class="portf-proj-link" href="https://dazzlingnails.netlify.app/" target="_blank">Host Link</a>
+                            <!-- <a class="portf-proj-link" href="#" target="_blank">Source Code</a> -->
                         </div>
-                        <div class="portf-proj-img">
-                            <img src="../imgs\drawing\sofa.jpg">
+                    </div>
+
+                    <!-- Athena Hackathon '22 - Circular -->
+                    <div class="project-container">
+                        <a class="portf-proj-link portf-proj-img" href="#" target="_blank">
+                            <img src="../imgs/coding-projects/athena-hack-circular-home-page.png"
+                                alt="Website made during Athena Hackathon 2022" />
+                        </a>
+
+                        <div class="portf-text">
+                            <h2>Circular - Athena Hackathon</h2>
+                            <p>In June 2022 I took part as team in Athena Hackathon to create a website that would allow anyone to be able to access a laptop that was no longer needed <br/> 
+                            Technologies used: Vue.js , HTML5, CSS3 and Bootstrap <br />
+                            </p>
+                            <a class="portf-proj-link" href="https://app.showcode.io/project/ce976759-1f9a-4de8-a78c-39d6c380bce5" target="_blank">Submission</a>
+                            <a class="portf-proj-link" href="https://github.com/lucky-eight/laptop-library" target="_blank">Source Code</a>
                         </div>
                     </div>
                 </section>
 
             </section>
-        </main>
-        
-        <footer>
-            <div class="footer-left">
-                <a href="#top" name="pg-top">back to top</a>
-            </div>
 
-            <div class="social-footer social">
-                <a href="https://github.com/nkpe" target="-blank">
-                    <i class="fa-brands fa-github-square"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/naomipearse/" target="-blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <p id="copyright">&#169; Naomi Pearse 2022</p>
-              
-            </div>
-        </footer>
-        <script src="https://kit.fontawesome.com/f469f6780c.js" crossorigin="anonymous"></script>
-    </body>
+            <!-- Design Portfolio -->     
+            <section class="portf-section" id="portf-code">
+                <h1>coding projects</h1>
+            </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <a href="#top" name="pg-top">back to top</a>
+        </div>
+
+        <div class="social-footer social">
+            <a href="https://github.com/nkpe" target="-blank">
+                <i class="fa-brands fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/naomipearse/" target="-blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <p id="copyright">&#169; Naomi Pearse 2022</p>
+
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/f469f6780c.js" crossorigin="anonymous"></script>
+    <script src="../scripts/scripts.js"></script>
+</body>
+
 </html>

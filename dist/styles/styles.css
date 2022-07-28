@@ -33,7 +33,6 @@ header {
     height: 90px;
     width: 100%;
     overflow: hidden;
-    line-height: 90px;
     padding-left: 10px;
     padding-right: 10px;
     box-sizing: border-box;
@@ -54,13 +53,23 @@ header nav {
     width: fit-content;
 }
 
-header nav a {
+header nav a , #portfolio-dropdown a {
     display: inline;
     list-style-type: none;
 }
 
-header nav a:hover {
+header nav a:hover , #portfolio-dropdown a:hover {
     font-weight: bold;
+}
+
+#portfolio-dropdown {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99;
+    row-gap: 10px;
+    padding-top: 10px;
 }
 
 /* PAGE LAYOUTS  */
@@ -189,49 +198,46 @@ header nav a:hover {
 }
 
 /* PORTFOLIO */
-#portf-pg-main section {
-    padding-bottom: 40px;
+.portf-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
 }
 
-#portf-pg-main .portf-section {
-    position: relative;
+.portf-section .portf-row {
     display: flex;
-    align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 20px;
     width: 100%;
-    height: fit-content;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: -20px;
 }
 
-#portf-pg-main .portf-h1-cont {
-    padding-top: 20px;
-    text-align: center;
-    margin-top: 0;
-    font-weight: 400;
+.portf-section .portf-row .project-container {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: calc(50% - 20px);
 }
 
-#portf-pg-main .portf-section .portf-proj-img {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 350px;
-    margin-top: 20px;
-    height: 368px;
+.portf-section .portf-row .project-container .portf-proj-img {
+    display: inline-block;
+    max-height: 42.5%;
     overflow: hidden;
+    width: 100%;    
+
 }
 
-#portf-pg-main .portf-section .portf-proj-img img {
-    max-height: 90%;
+.portf-section .portf-row .project-container .portf-proj-img img {
+    max-width: 100%;
+    height: auto;
 }
 
-#portf-pg-main .portf-section .portf-proj-img h3 {
-    font-size: 15px;
-    margin: 7px;
-    font-weight: 400;
+
+.portf-section .portf-row .project-container .project-text {
+    display: inline-flex;
+
 }
 
 /* CONTACT PAGE*/
