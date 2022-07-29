@@ -21,14 +21,25 @@ for (let link of dropdownLinks) {
     link.addEventListener('click', pageShow);
 };
 
-// let onLoad = () => {portfolioDropdown.style.display = "none"};
+let dropdownState = null;
 
-// onLoad();
+let onLoad = () => {
+    portfolioDropdown.style.display = "none";
+    dropdownState = false};
+
+onLoad();
 
 let navDropdownShow = (e) => {
+    if (dropdownState === false){
+    console.log(dropdownState);
     portfolioDropdown.style.display = "flex";
-    console.log("click working");
-};
+    console.log(e);
+    dropdownState = true;
+    console.log(dropdownState);
+} else {
+    portfolioDropdown.style.display = "none";
+    dropdownState = false;
+}};
 
 navProjects.addEventListener('click', navDropdownShow);
 

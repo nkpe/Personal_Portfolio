@@ -63,13 +63,20 @@ header nav a:hover , #portfolio-dropdown a:hover {
 }
 
 #portfolio-dropdown {
-    position: absolute;
-    display: none;
+    position: absolute; 
     flex-direction: column;
     align-items: center;
     z-index: 99;
     row-gap: 10px;
     padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #7DBECA;
+    transform: translateX(-11px);
+}
+
+#nav-projects:hover {
+    cursor: pointer;
 }
 
 /* PAGE LAYOUTS  */
