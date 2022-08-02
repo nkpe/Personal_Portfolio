@@ -1,6 +1,7 @@
 html {
     margin: 0;
     background-color: #7DBECA;
+    font-size: 16px;
 }
 
 body {
@@ -221,7 +222,7 @@ header nav a:hover , #portfolio-dropdown a:hover {
 
 /* PORTFOLIO */
 .portf-section {
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -232,8 +233,9 @@ header nav a:hover , #portfolio-dropdown a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 20px;
+    column-gap: 10px;
     width: 100%;
+    justify-content: space-around;
 }
 
 .portf-section .portf-row .project-container {
@@ -245,7 +247,7 @@ header nav a:hover , #portfolio-dropdown a:hover {
 
 .portf-section .portf-row .project-container .portf-proj-img {
     display: inline-block;
-    max-height: 42.5%;
+    height: 70%;
     overflow: hidden;
     width: 100%;    
 
@@ -394,6 +396,10 @@ footer {
     #home-pg-main #aside-left #img-home-container {
         max-height: 260px;
         height: 94%;
+    }
+
+    #home-pg-main #aside-left #wel-home-bkgrnd h1{
+        font-size: 2rem;
     }
 }
 
