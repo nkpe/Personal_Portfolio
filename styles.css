@@ -1,0 +1,373 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Actor, sans-serif;
+    height: 100vh;
+}
+
+body * {
+    color: rgb(107 107 107) !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+header {
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    line-height: 90px;
+}
+
+header .logo-home {
+    position: relative;
+    height: inherit;
+}
+
+header .logo-home img {
+    height: inherit;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+}
+
+header nav {
+    position: relative;
+    background: rgba(189, 232, 174, 0.51);
+    width: fit-content;
+    float: right;
+}
+
+header nav a {
+    display: inline;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    font-weight: bold;
+}
+
+.vh {
+    min-height: 330px;
+    height: calc(100vh - 90px);
+}
+
+.long-page {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.pg-heading {
+    position: absolute;
+    display: flex;
+    width: 75vw;
+    height: 69px;
+    z-index: 5;
+    background-color: #FDEDFC;
+    align-items: center;
+    padding-left: 35px;
+    box-sizing: content-box;
+}
+
+.pg-heading h1 {
+    font-weight: 400;
+}
+
+/* HOME PAGE */
+#home-pg-main #aside-left {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: absolute;
+    height: inherit;
+    width: 85%;
+    left: 0px;
+    z-index: 1;
+}
+
+#home-pg-main #aside-left #wel-home-bkgrnd {
+    background-color: #FFFBD5;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    height: 57%;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#home-pg-main #aside-left #wel-home-bkgrnd h1 {
+    margin: 0;
+    font-size: 4vw;
+    font-weight: normal;
+}
+
+#home-pg-main #aside-left #img-home-container {
+    height: 100%;
+    width: auto;
+}
+
+#home-pg-main #aside-left #img-home-container img {
+    height: inherit;
+}
+
+#home-pg-main #aside-right {
+    display: block;
+    position: absolute;
+    height: inherit;
+    width: 45%;
+    background-color: #FDEDFC;
+    right: 0px;
+    z-index: 0;
+}
+
+/* BIO PAGE  */
+#bio-page {
+    height: 220vh;
+}
+
+#bio-page .bio-blocks {
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 75vh;
+    width: 85%;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+    padding-bottom: 20vh;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3.25vh;
+}
+
+#bio-page .bio-blocks h2 {
+    font-weight: normal;
+    width: 100%;
+}
+
+#bio-page .bio-blocks p {
+    z-index: 10;
+    width: 100%;
+}
+
+#bio-page #about-me {
+    background-color: #FFFBD5;
+    top: 0;
+    float: left;
+}
+
+#bio-page #bio-background {
+    background-color: #FDEDFC;
+    float: right;
+    transform: translateY(-20vh);
+}
+
+#bio-page #bio-present {
+    background-color: #D4E4FD;
+    float: left;
+    transform: translateY(-40vh);
+}
+
+#bio-page #bio-interests {
+    background-color: #FDF1D4;
+    float: right;
+    transform: translateY(-60vh);
+    height: 55vh;
+}
+
+/* PORTFOLIO */
+#portf-pg-main section {
+    padding-bottom: 40px;
+}
+
+#portf-pg-main .portf-section {
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+
+#portf-pg-main .portf-h2-cont {
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+#portf-pg-main .portf-section .portf-proj-img {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 350px;
+    margin-top: 20px;
+    height: 368px;
+    overflow: hidden;
+}
+
+#portf-pg-main .portf-section .portf-proj-img img {
+    max-height: 90%;
+}
+
+#portf-pg-main .portf-section .portf-proj-img h3 {
+    font-size: 15px;
+    margin: 7px;
+    font-weight: 400;
+}
+
+#portf-pg-main #portf-code-bkg {
+    background-color: #FFFBD5;
+}
+
+#portf-pg-main #portf-design-bkg {
+    background-color: #FDEDFC;
+}
+
+#portf-pg-main #portf-drawing-bkg {
+    background-color: rgba(189, 232, 174, 0.51);
+}
+
+/* CONTACT PAGE*/
+.form-field-background {
+    background-color: white;
+    -webkit-appearance: none;
+}
+
+#contact-pg {
+    min-height: 445px !important;
+}
+
+#contact-pg #contact-form-container {
+    position: relative;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFBD5;
+    height: calc(100% - 50px);
+    width: 100%;
+}
+
+#contact-pg #contact-form {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#contact-pg #contact-form * {
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+
+#contact-pg #contact-form .form-flex-child {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact-pg #contact-form .form-item {
+    display: inline;
+    width: 200px;
+    margin: 7px;
+}
+
+#contact-pg #contact-form .form-item-span {
+    display: inline;
+    width: 414px;
+    margin: 7px;
+}
+
+#contact-pg #contact-form .form-flex-child .form-item-span #message-area {
+    height: 100px;
+}
+
+#contact-pg #contact-form #submit-contact-form {
+    text-rendering: auto;
+    color: buttontext;
+    background-color: #FDEDFC;
+}
+
+/* FOOTER */
+footer {
+    position: relative;
+    background-color: #D4E4FD;
+    height: 90px;
+    bottom: 0;
+    padding: 20px;
+}
+
+footer .footer-left {
+    position: relative;
+    float: left;
+}
+
+footer .footer-left ul {
+    margin: 0;
+}
+
+footer .footer-left ul li {
+    list-style-type: none;
+
+}
+
+footer .social-footer {
+    position: relative;
+    float: right;
+}
+
+footer .social-footer .fa-brands {
+    font-size: 250%;
+    padding-left: 10px;
+}
+
+/* RESPONSIVE CODE */
+
+/* HOME PAGE */
+@media screen and (max-width: 700px) {
+    #home-pg-main #aside-left #wel-home-bkgrnd {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-around;
+        height: 65%;
+    }
+
+    #home-pg-main #aside-left #img-home-container {
+        max-height: 260px;
+        height: 94%;
+    }
+}
+
+/* CONTACT PAGE */
+@media screen and (max-width: 427px) {
+    #contact-pg {
+        min-height: 700px !important;
+    }
+
+    #contact-pg #contact-form .form-item-span {
+        width: 200px;
+    }
+}
