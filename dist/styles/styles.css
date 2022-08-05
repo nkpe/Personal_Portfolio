@@ -227,6 +227,8 @@ header nav a:hover , #portfolio-dropdown a:hover {
     flex-wrap: wrap;
     align-items: center;
     width: 100%;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .portf-section .portf-row {
@@ -243,6 +245,7 @@ header nav a:hover , #portfolio-dropdown a:hover {
     flex-direction: column;
     flex-wrap: nowrap;
     width: calc(50% - 20px);
+    min-width: 300px;
 }
 
 .portf-section .portf-row .project-container .portf-proj-img {
@@ -261,7 +264,15 @@ header nav a:hover , #portfolio-dropdown a:hover {
 
 .portf-section .portf-row .project-container .project-text {
     display: inline-flex;
+}
 
+.portf-section .portf-row .project-container .project-link-list {
+    margin: 0;
+    padding: 0;
+}
+
+.portf-section .portf-row .project-container .project-link-list li {
+    list-style-type: none;
 }
 
 /* CONTACT PAGE*/
